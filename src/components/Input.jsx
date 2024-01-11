@@ -81,7 +81,18 @@ const Input = () => {
           type="file"
           style={{ display: "none" }}
           id="file"
-          onChange={(e) => setImg(e.target.files[0])}
+          onChange={
+            
+            (e) => 
+            
+            {
+              console.log(e.target.files[0])
+              setImg(e.target.files[0])
+
+              // console.log(img)
+            }
+
+          }
         />
         <label htmlFor="file">
           <img src={Img} alt="" />
